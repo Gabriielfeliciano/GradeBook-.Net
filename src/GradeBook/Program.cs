@@ -6,6 +6,9 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
+            var numbers = new double[3];
+            numbers[1] = 11.2;
+
             if(args.Length >0)
             {
             Console.WriteLine($"Hello {args[1]}!");
