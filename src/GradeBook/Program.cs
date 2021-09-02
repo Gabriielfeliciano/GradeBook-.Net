@@ -8,19 +8,11 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            var book = new Book();
 
-            var grades = new List<double>() {12.7, 20.3, 5.5};
-            grades.Add(21.5);
-
-            var result = 0.0;
-            foreach(var number in grades)
-            {
-                result += number;
-            }
-            result /= grades.Count; 
-            Console.WriteLine($"A média é {result}");
-            
+            var book = new Book("Gabriel's Grade Book");
+            book.AddGrade(9.1);
+            book.AddGrade(13.4);
+            book.ShowStatistics();
         }
     }
 }
